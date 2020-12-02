@@ -1,0 +1,13 @@
+{% extends 'projects/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome!</h1>
+      <p class="lead">This is a simple portfolio website built using Django Web Framework.</p>
+      <hr class="my-4">
+      <p>To see all the projects in this website just click bellow.</p>
+      <a class="btn btn-primary btn-lg" href="{% url 'projects:all_projects' %}" role="button">Go to Portfolio!</a>
+    </div>
+{% endblock %}

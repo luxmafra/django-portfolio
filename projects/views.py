@@ -3,6 +3,10 @@ from projects.models import Project
 
 
 # Create your views here.
+def home(request):
+    return render(request, 'projects/index.html')
+
+
 def all_projects(request):
     # query the db to return all project objects
     projects = Project.objects.all()
