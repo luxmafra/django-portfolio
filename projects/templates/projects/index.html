@@ -3,11 +3,27 @@
 {% load static %}
 
 {% block content %}
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome!</h1>
-      <p class="lead">This is a simple portfolio website built using Django Web Framework.</p>
-      <hr class="my-4">
-      <p>To see all the projects in this website just click bellow.</p>
-      <a class="btn btn-primary btn-lg" href="{% url 'projects:all_projects' %}" role="button">Go to Portfolio!</a>
+    <div class="container mt-5">
+        <div class="col-md-12">
+            <div class="card">
+                <h5 class="card-header">
+                    About the author:
+                </h5>
+                <div class="card-body">
+                    <p class="card-text">
+                        <img src="{% static 'projects/img/luxmafra.jpeg' %}" width="150px" alt="luxmafra's photo" class="img-thumbnail float-left mr-3" />
+                        <b>Lucas Mafra Chagas</b> is a Software Engineer Bachelor’s student who will graduate in 2022
+                        with international experience living in different countries providing with language
+                        skills and a wider outlook. Studying towards Python 3 Specialisation and Django Web
+                        Framework with the capacity to learn and passion to improve personal as well as
+                        professionally. Also has experience working with automated software testing.
+                        Possess basic knowledge across a range of other programming languages as Java,
+                        C++ and JavaScript.<br/><br/>
+
+                        Repositories on <a href="https://github.com/luxmafra" target="_blank">GitHub</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
